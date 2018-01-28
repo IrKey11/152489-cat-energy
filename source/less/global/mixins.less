@@ -1,3 +1,12 @@
+.no-outline() {
+  outline: none;
+  background: transparent;
+
+  &::before {
+    display: none;
+  }
+}
+
 .title() {
   font-size: 36px;
   line-height: 60px;

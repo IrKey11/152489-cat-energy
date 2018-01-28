@@ -1,14 +1,14 @@
 .real-example {
-  background-color: #f2f2f2;
+  background-color: @color-light-grey;
 }
 
 .real-example__heading {
-  .title;
+  .title();
 }
 
 .real-example__text {
-  font-family: @ffam-content;
-  .content-font;
+  .content-font();
+  font-family: @font-family-content;
 }
 
 .real-example__stats {
@@ -27,8 +27,7 @@
   font-size: 12px;
   line-height: 12px;
   font-weight: 200;
-  color: #444444;
-
+  color: @color-grey;
   padding: 0;
   margin: 0;
 }

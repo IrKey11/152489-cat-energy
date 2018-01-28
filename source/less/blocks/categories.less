@@ -1,9 +1,9 @@
 .categories__list {
-  .reset-list;
+  .reset-list();
 }
 
 .categories__item {
-  background-color: #f2f2f2;
+  background-color: @color-light-grey;
 }
 
 .categories__heading {
@@ -14,14 +14,13 @@
 }
 
 .categories__text {
-  font-family: @ffam-content;
-  .content-font;
+  .content-font();
+  font-family: @font-family-content;
 }
 
 .categories__button {
   font-size: 16px;
   line-height: 16px;
-  color: #111111;
-
-  background-color: #f2f2f2;
+  color: @color-black;
+  background-color: @color-light-grey;
 }
