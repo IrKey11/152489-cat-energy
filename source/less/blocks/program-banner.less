@@ -1,8 +1,15 @@
 .program-banner {
+  display: flex;
+  flex-direction: column;
   background-color: #65a93c;
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.program-banner__wrapper {
+  display: flex;
+  flex-direction: column;
 }
 
 .program-banner__heading {
@@ -21,8 +28,15 @@
 }
 
 .program-banner__button {
+  order: 2;
   font-size: 14px;
   line-height: 18px;
   font-weight: 200;
   padding: 11px 72px;
+}
+
+@media (min-width: @tablet-width) {
+  .program-banner__button {
+    order: 0;
+  }
 }
