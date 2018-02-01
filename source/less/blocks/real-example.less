@@ -2,8 +2,31 @@
   background-color: @color-light-grey;
 }
 
+@media (min-width: @desktop-width) {
+  .real-example {
+    display: flex;
+  }
+}
+
 .real-example__heading {
   .title();
+}
+
+@media (min-width: @tablet-width) {
+  .real-example__wrapper-stats {
+    display: flex;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .real-example__wrapper-stats {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.real-example__stats {
+
 }
 
 .real-example__text {
