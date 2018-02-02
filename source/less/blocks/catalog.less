@@ -2,6 +2,13 @@
   .reset-list();
 }
 
+@media (min-width: @tablet-width) {
+  .catalog__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
 .card-product__heading {
   font-size: 16px;
   line-height: 20px;
@@ -15,4 +22,10 @@
   line-height: 16px;
   font-weight: 200;
   color: @color-grey;
+}
+
+@media (min-width: @desktop-width) {
+  .catalog__wrapper-additional-products {
+    display: flex;
+  }
 }
