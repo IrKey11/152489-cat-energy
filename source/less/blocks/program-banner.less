@@ -1,15 +1,12 @@
 .program-banner {
   display: flex;
   flex-direction: column;
-  background-color: #65a93c;
-  background-image: url("../img/index-background-mobile@1x.jpg");
+  width: 320px;
+  margin: 0 auto;
+  background-image: url("../img/index-background-mobile@1x.jpg"), linear-gradient(#63a73a 305px, #ffffff 180px);
   background-repeat: no-repeat;
-  background-position: center;
-}
-
-.program-banner__wrapper {
-  display: flex;
-  flex-direction: column;
+  background-position: top;
+  text-align: center;
 }
 
 .program-banner__heading {
@@ -20,6 +17,7 @@
 }
 
 .program-banner__slogan {
+  margin-top: -5px;
   font-size: 14px;
   line-height: 14px;
   font-weight: 200;
@@ -27,12 +25,18 @@
   text-transform: uppercase;
 }
 
+.program-banner__product {
+  margin: 25px 0 0 20px;
+}
+
 .program-banner__button {
   order: 2;
+  padding: 11px 72px;
+  margin: 4px 20px 0 20px;
   font-size: 14px;
   line-height: 18px;
   font-weight: 200;
-  padding: 11px 72px;
+  text-decoration: none;
 }
 
 @media (min-width: @tablet-width) {
