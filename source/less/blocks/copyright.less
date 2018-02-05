@@ -1,3 +1,7 @@
+.copyright {
+  padding: 32px 0 41px 0;
+}
+
 .copyright__text {
   font-family: @font-family-content;
   font-size: 16px;
@@ -7,7 +11,19 @@
 }
 
 .copyright__link {
-  display: block;
+  position: relative;
+  font-family: @font-family-content;
+  font-size: 16px;
+  line-height: 16px;
+  color: @color-grey;
+  text-decoration: none;
+}
+
+.copyright__link::after {
+  content: "";
+  position: absolute;
+  top: -15px;
+  left: 250px;
   width: 27px;
   height: 34px;
   background-image: url("../img/logo-htmlacademy.svg");

@@ -1,9 +1,36 @@
 .page-footer {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  padding: 0 20px 0 20px;
+  margin: 0 auto;
   background-color: @color-light-grey;
 }
 
 @media (min-width: @tablet-width) {
   .page-footer {
-    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 708px;
+    padding: 0 30px 0 30px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-footer {
+    width: 1220px;
+    padding: 0 110px 0 110px;
+  }
+}
+
+.page-footer__logo {
+  margin: auto;
+  padding: 39px 0 34px 0;
+}
+
+@media (min-width: @tablet-width) {
+  .page-footer__logo {
+    margin: 0;
+    padding: 39px 0 62px 0;
   }
 }

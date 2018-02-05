@@ -26,11 +26,18 @@
 @media (min-width: @desktop-width) {
   .categories__list {
     display: flex;
+    justify-content: space-between;
   }
 }
 
 .categories__item {
   background-color: @color-light-grey;
+}
+
+@media (min-width: @desktop-width) {
+  .categories__item {
+    width: 590px;
+  }
 }
 
 .categories__heading {
