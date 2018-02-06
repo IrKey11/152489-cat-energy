@@ -38,16 +38,19 @@
           <legend class="visually-hidden">Общие данные</legend>
           <ul class="picking-program__list">
             <li class="picking-program__item">
-              <label class="picking-program__label label" for="name">Имя:<sup>*</sup></label>
-              <input class="picking-program__input-text input-text" type="text" id="name" name="name" placeholder="Барсик">
+              <label class="picking-program__label label">Имя:<sup>*</sup>
+                <input class="picking-program__input-text input-text" type="text" name="name" placeholder="Барсик">
+              </label>
             </li>
             <li class="picking-program__item">
-              <label class="picking-program__label label" for="heft">Вес (кг):<sup>*</sup></label>
-              <input class="picking-program__input-text input-text" type="text" id="heft" name="heft" placeholder="7">
+              <label class="picking-program__label label">Вес (кг):<sup>*</sup>
+                <input class="picking-program__input-text input-text" type="text" name="heft" placeholder="7">
+              </label>
             </li>
             <li class="picking-program__item">
-              <label class="picking-program__label label" for="age">Возраст (лет):</label>
-              <input class="picking-program__input-text input-text" type="text" id="age" name="age" placeholder="7">
+              <label class="picking-program__label label">Возраст (лет):
+                <input class="picking-program__input-text input-text" type="text" name="age" placeholder="7">
+              </label>
             </li>
           </ul>
         </fieldset>
@@ -55,16 +58,19 @@
           <legend class="visually-hidden">Цель программы</legend>
           <ul class="picking-program__list">
             <li class="picking-program__item">
-              <input class="visually-hidden picking-program__input-radio input-radio" type="radio" name="goal-program" value="diet" id="losing-weight" checked>
-              <label class="label" for="losing-weight">Похудение</label>
+              <label class="label">
+                <input class="visually-hidden picking-program__input-radio input-radio" type="radio" name="goal-program" value="diet" checked>
+              Похудение</label>
             </li>
             <li class="picking-program__item">
-              <input class="visually-hidden picking-program__input-radio input-radio" type="radio" name="goal-program" value="mass" id="mass-gathering">
-              <label class="label" for="mass-gathering">Набор массы</label>
+              <label class="label">
+                <input class="visually-hidden picking-program__input-radio input-radio" type="radio" name="goal-program" value="mass">
+              Набор массы</label>
             </li>
             <li class="picking-program__item">
-              <input class="visually-hidden picking-program__input-radio input-radio" type="radio" name="goal-program" value="advice" id="no-savvy">
-              <label class="label" for="no-savvy">Не знаю (нужен Ваш совет)</label>
+              <label class="label" for="no-savvy">
+                <input class="visually-hidden picking-program__input-radio input-radio" type="radio" name="goal-program" value="advice">
+              Не знаю (нужен Ваш совет)</label>
             </li>
           </ul>
         </fieldset>
@@ -72,12 +78,14 @@
           <legend class="picking-program__legend">Контактные данные (владельца кота)</legend>
           <ul class="picking-program__list">
             <li class="picking-program__item">
-              <label class="label" for="email">E-mail:<sup>*</sup></label>
-              <input class="picking-program__input-text input-text input-text--icon" type="email" name="email" id="email" placeholder="KUKLACHEV@GMAIL.COM">
+              <label class="label">E-mail:<sup>*</sup>
+                <input class="picking-program__input-text input-text input-text--icon" type="email" name="email" placeholder="KUKLACHEV@GMAIL.COM">
+              </label>
             </li>
             <li class="picking-program__item">
-              <label class="label" for="tel">Телефон:<sup>*</sup></label>
-              <input class="picking-program__input-text input-text input-text--icon" type="tel" name="tel" id="tel" placeholder="8 (960)900 60 90">
+              <label class="label">Телефон:<sup>*</sup>
+                <input class="picking-program__input-text input-text input-text--icon" type="tel" name="tel" placeholder="8 (960)900 60 90">
+              </label>
             </li>
           </ul>
         </fieldset>
@@ -93,26 +101,30 @@
           <legend class="picking-program__legend">Дополнительно</legend>
           <ul class="picking-program__list">
             <li class="picking-program__item">
-              <input class="visually-hidden picking-program__input-checkbox input-checkbox" type="checkbox" name="sweetener" id="sweetener" checked>
-              <label class="label" for="sweetener">Сахарозаменитель</label>
+              <label class="label">
+                <input class="visually-hidden picking-program__input-checkbox input-checkbox" type="checkbox" name="sweetener" checked>
+              Сахарозаменитель</label>
             </li>
             <li class="picking-program__item">
-              <input class="visually-hidden picking-program__input-checkbox input-checkbox" type="checkbox" name="water" id="water">
-              <label class="label" for="water">Питьевая вода</label>
+              <label class="label">
+                <input class="visually-hidden picking-program__input-checkbox input-checkbox" type="checkbox" name="water">
+              Питьевая вода</label>
             </li>
             <li class="picking-program__item">
-              <input class="visually-hidden picking-program__input-checkbox input-checkbox" type="checkbox" name="milk" id="milk">
-              <label class="label" for="milk">Молоко</label>
+              <label class="label">
+                <input class="visually-hidden picking-program__input-checkbox input-checkbox" type="checkbox" name="milk">
+              Молоко</label>
             </li>
             <li class="picking-program__item">
-              <input class="visually-hidden picking-program__input-checkbox input-checkbox" type="checkbox" name="vitamins" id="vitamins">
-              <label class="label" for="vitamins">Витамины</label>
+              <label class="label">
+                <input class="visually-hidden picking-program__input-checkbox input-checkbox" type="checkbox" name="vitamins">
+              Витамины</label>
             </li>
           </ul>
         </fieldset>
-        <button class="picking-program__button button button--theme-green">Отправить заявку</button>
+        <button class="picking-program__button button">Отправить заявку</button>
       </form>
-      <small class="picking-program__footnote picking-program__footnote--top">
+      <small class="picking-program__footnote">
         <sup>*</sup> — Обязательные поля
       </small>
     </section>
