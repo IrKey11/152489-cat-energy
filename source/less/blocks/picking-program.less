@@ -16,7 +16,13 @@
   .reset-list();
 }
 
+.picking-program__item {
+  margin-bottom: 15px;
+}
+
 .picking-program__fieldset {
+  padding: 35px 0 23px 0;
+  margin: 0;
   border: none;
 }
 
@@ -27,7 +33,26 @@
   color: @color-black;
 }
 
+.picking-program__label {
+  display: flex;
+  align-items: baseline;
+  width: 100%;
+}
+
+.picking-program__label-toogle {
+  margin-left: 45px;
+}
+
+.picking-program__textarea {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 15px 5px 15px 15px;
+  border: 1px solid #e6e6e6;
+}
+
 .picking-program__button {
+  padding: 10px 0 10px 0;
+  width: 100%;
   border: none;
 }
 
@@ -42,9 +67,12 @@
 }
 
 .picking-program__footnote {
+  display: block;
+  margin-top: 20px;
   font-family: @font-family-content;
   font-size: 14px;
   line-height: 16px;
   font-weight: 200;
   color: @color-grey;
+  text-align: center;
 }
