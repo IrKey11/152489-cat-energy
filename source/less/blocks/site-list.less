@@ -41,6 +41,17 @@
   }
 }
 
+@media (min-width: @tablet-width) {
+  .site-list__link {
+    padding: 0;
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 200;
+    color: @color-white;
+    border: none;
+  }
+}
+
 .site-list__item {
   text-align: center;
   border-bottom: 1px solid #e6e6e6;
@@ -58,5 +69,11 @@
 @media (min-width: @tablet-width) {
   .site-list__item--active {
     box-shadow: 0 2px 0 @color-green;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .site-list__item--active {
+    box-shadow: 0 2px 0 @color-white;
   }
 }
