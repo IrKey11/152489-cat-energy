@@ -3,30 +3,17 @@
   padding: 0 20px 0 20px;
 }
 
-@media (min-width: @tablet-width) {
-  .picking-program {
-    width: 708px;
-    padding: 0 30px 0 30px;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .picking-program {
-    width: 1220px;
-    padding: 0 110px 0 110px;
-  }
-}
-
 .picking-program__text {
   width: 235px;
+  font-family: @font-family-base;
   font-size: 14px;
   line-height: 18px;
-  font-weight: 200;
+  font-weight: 400;
   color: @color-black;
   text-transform: uppercase;
 }
 
-.picking-program__list {
+.picking-program__fieldset ul {
   .reset-list();
 }
 
@@ -41,9 +28,10 @@
 }
 
 .picking-program__legend {
+  font-family: @font-family-base;
   font-size: 24px;
   line-height: 24px;
-  font-weight: 200;
+  font-weight: 400;
   color: @color-black;
 }
 
@@ -79,7 +67,7 @@
   font-family: @font-family-base;
   font-size: 16px;
   line-height: 18px;
-  font-weight: 200;
+  font-weight: 400;
   color: @color-grey;
   text-transform: uppercase;
 }
@@ -90,7 +78,65 @@
   font-family: @font-family-content;
   font-size: 14px;
   line-height: 16px;
-  font-weight: 200;
+  font-weight: 400;
   color: @color-grey;
   text-align: center;
+}
+
+@media (min-width: @tablet-width) {
+  .picking-program {
+    width: 708px;
+    padding: 0 30px 0 30px;
+  }
+
+  .picking-program__wrapper-button {
+    display: flex;
+  }
+
+  .picking-program__button {
+    width: 50%;
+  }
+
+  .picking-program__list-additionally {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .picking-program__list-additionally .picking-program__item {
+    width: 50%;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .picking-program {
+    width: 1220px;
+    padding: 0 40px 0 40px;
+  }
+
+  .picking-program__fieldset-wrapper {
+    display: flex;
+  }
+
+  .picking-program__fieldset-wrapper .picking-program__fieldset {
+    width: 50%;
+  }
+
+  .picking-program__list-categories {
+    align-self: center;
+    border: 1px solid #e6e6e6;
+  }
+
+  .picking-program__list-contacts {
+    display: flex;
+    width: 100%;
+    border: none;
+  }
+
+  .picking-program__list-contacts .picking-program__item {
+    width: 50%;
+  }
+
+  .picking-program__list-additionally .picking-program__item {
+    width: 25%;
+  }
 }

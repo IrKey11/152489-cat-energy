@@ -19,7 +19,7 @@
         <li class="site-list__item">
           <a class="site-list__link" href="index.html">Главная</a>
         </li>
-        <li class="site-list__item site-list__item--active">
+        <li class="site-list__item">
           <a class="site-list__link" href="catalog.html">Каталог продукции</a>
         </li>
         <li class="site-list__item site-list__item--active">
@@ -34,49 +34,54 @@
     <section class="picking-program">
       <p class="picking-program__text">Заполните анкету и мы подберем программу питания для Вашего кота</p>
       <form class="picking-program__form" method="get" action="https://echo.htmlacademy.ru">
-        <fieldset class="picking-program__fieldset">
-          <h2 class="visually-hidden">Общие данные</h2>
-          <ul class="picking-program__list">
-            <li class="picking-program__item">
-              <label class="picking-program__label label"><span>Имя:<sup>*</sup></span>
-                <input class="picking-program__input-text input-text input" type="text" name="name" placeholder="Барсик">
-              </label>
-            </li>
-            <li class="picking-program__item">
-              <label class="picking-program__label label"><span>Вес (кг):<sup>*</sup></span>
-                <input class="picking-program__input-text input-text input" type="text" name="heft" placeholder="7">
-              </label>
-            </li>
-            <li class="picking-program__item">
-              <label class="picking-program__label label"><span>Возраст (лет):</span>
-                <input class="picking-program__input-text input-text input" type="text" name="age" placeholder="7">
-              </label>
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset class="picking-program__fieldset">
-          <legend class="visually-hidden">Цель программы</legend>
-          <ul class="picking-program__list">
-            <li class="picking-program__item">
-              <label class="picking-program__label-toogle label">
-                <input class="visually-hidden picking-program__input-radio input-radio" type="radio" name="goal-program" value="diet" checked>
-              Похудение</label>
-            </li>
-            <li class="picking-program__item">
-              <label class="picking-program__label-toogle label">
-                <input class="visually-hidden picking-program__input-radio input-radio" type="radio" name="goal-program" value="mass">
-              Набор массы</label>
-            </li>
-            <li class="picking-program__item">
-              <label class="picking-program__label-toogle label" for="no-savvy">
-                <input class="visually-hidden picking-program__input-radio input-radio" type="radio" name="goal-program" value="advice">
-              Не знаю (нужен Ваш совет)</label>
-            </li>
-          </ul>
-        </fieldset>
+        <div class="picking-program__fieldset-wrapper">
+          <fieldset class="picking-program__fieldset">
+            <legend class="visually-hidden">Общие данные</legend>
+            <ul class="picking-program__list">
+              <li class="picking-program__item">
+                <label class="picking-program__label label"><span>Имя:<sup>*</sup></span>
+                  <input class="picking-program__input-text input-text input" type="text" name="name" placeholder="Барсик">
+                </label>
+              </li>
+              <li class="picking-program__item">
+                <label class="picking-program__label label"><span>Вес (кг):<sup>*</sup></span>
+                  <input class="picking-program__input-text input-text input" type="text" name="heft" placeholder="7">
+                </label>
+              </li>
+              <li class="picking-program__item">
+                <label class="picking-program__label label"><span>Возраст (лет):</span>
+                  <input class="picking-program__input-text input-text input" type="text" name="age" placeholder="7">
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="picking-program__fieldset">
+            <legend class="visually-hidden">Цель программы</legend>
+            <ul class="picking-program__list-categories">
+              <li class="picking-program__item">
+                <label class="picking-program__label-toogle label">
+                  <input class="visually-hidden picking-program__input-radio input-radio" type="radio" name="goal-program" value="diet" checked>
+                  Похудение
+                </label>
+              </li>
+              <li class="picking-program__item">
+                <label class="picking-program__label-toogle label">
+                  <input class="visually-hidden picking-program__input-radio input-radio" type="radio" name="goal-program" value="mass">
+                  Набор массы
+                </label>
+              </li>
+              <li class="picking-program__item">
+                <label class="picking-program__label-toogle label" for="no-savvy">
+                  <input class="visually-hidden picking-program__input-radio input-radio" type="radio" name="goal-program" value="advice">
+                  Не знаю (нужен Ваш совет)
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+        </div>
         <fieldset class="picking-program__fieldset">
           <legend class="picking-program__legend">Контактные данные (владельца кота)</legend>
-          <ul class="picking-program__list">
+          <ul class="picking-program__list-contacts">
             <li class="picking-program__item">
               <label class="picking-program__label label"><span>E-mail:<sup>*</sup></span>
                 <input class="picking-program__input-text input-text input input-text--icon" type="email" name="email" placeholder="KUKLACHEV@GMAIL.COM">
@@ -99,34 +104,40 @@
         </fieldset>
         <fieldset class="picking-program__fieldset">
           <legend class="picking-program__legend">Дополнительно</legend>
-          <ul class="picking-program__list">
+          <ul class="picking-program__list-additionally">
             <li class="picking-program__item">
               <label class="picking-program__label-toogle label">
                 <input class="visually-hidden picking-program__input-checkbox input-checkbox" type="checkbox" name="sweetener" checked>
-              Сахарозаменитель</label>
+                Сахарозаменитель
+              </label>
             </li>
             <li class="picking-program__item">
               <label class="picking-program__label-toogle label">
                 <input class="visually-hidden picking-program__input-checkbox input-checkbox" type="checkbox" name="water">
-              Питьевая вода</label>
+                Питьевая вода
+              </label>
             </li>
             <li class="picking-program__item">
               <label class="picking-program__label-toogle label">
                 <input class="visually-hidden picking-program__input-checkbox input-checkbox" type="checkbox" name="milk">
-              Молоко</label>
+                Молоко
+              </label>
             </li>
             <li class="picking-program__item">
               <label class="picking-program__label-toogle label">
                 <input class="visually-hidden picking-program__input-checkbox input-checkbox" type="checkbox" name="vitamins">
-              Витамины</label>
+                Витамины
+              </label>
             </li>
           </ul>
         </fieldset>
-        <button class="picking-program__button button">Отправить заявку</button>
+        <div class="picking-program__wrapper-button">
+          <button class="picking-program__button button">Отправить заявку</button>
+          <small class="picking-program__footnote">
+            <sup>*</sup> — Обязательные поля
+          </small>
+        </div>
       </form>
-      <small class="picking-program__footnote">
-        <sup>*</sup> — Обязательные поля
-      </small>
     </section>
     <section class="contacts">
       <section class="contacts__cooperation cooperation">
