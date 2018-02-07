@@ -1,14 +1,51 @@
 .promo {
-  background-color: #68b738;
+  padding: 190px 20px 47px 20px;
   background-image: url("../img/gift-photo-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.promo__slogan {
+  position: relative;
+  display: block;
+  width: 200px;
+  margin: 0 auto;
+  font-size: 16px;
+  line-height: 20px;
+  color: @color-white;
+  text-align: center;
+}
+
+.promo__slogan::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 55px;
+  height: 60px;
+  background-image: url("../img/icon-gift.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.promo__slogan {
-  font-family: @font-family-content;
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: 200;
-  color: @color-white;
+@media (min-width: @tablet-width) {
+  .promo {
+    padding: 75px 27px 75px 420px;
+  }
+
+  .promo-slogan {
+    text-align: left;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .promo {
+    margin: 80px 0 0 0;
+    padding: 190px 27px 30px 27px;
+  }
+
+  .promo-slogan {
+    text-align: center;
+  }
 }

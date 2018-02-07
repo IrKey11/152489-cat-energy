@@ -1,26 +1,128 @@
+.categories {
+  width: 280px;
+  padding: 0 20px 0 20px;
+  margin: 0 auto;
+}
+
 .categories__list {
   .reset-list();
+  position: relative;
 }
 
 .categories__item {
   background-color: @color-light-grey;
 }
 
+
 .categories__heading {
+  padding: 30px 0 0 91px;
+  font-family: @font-family-base;
   font-size: 24px;
   line-height: 37px;
-  font-weight: 200;
+  color: @color-black;
   text-transform: uppercase;
 }
 
-.categories__text {
-  .content-font();
-  font-family: @font-family-content;
+.categories__heading--slim {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 27px;
+    left: 22px;
+    width: 50px;
+    height: 50px;
+    background-color: @color-green;
+    border-radius: 50%;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 23px;
+    left: 22px;
+    width: 50px;
+    height: 50px;
+    background-image: url("../img/icon-cat-slim.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
 
-.categories__button {
+.categories__heading--pro {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 310px;
+    left: 22px;
+    width: 50px;
+    height: 50px;
+    background-color: @color-green;
+    border-radius: 50%;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 320px;
+    left: 14px;
+    width: 67px;
+    height: 28px;
+    background-image: url("../img/icon-cat-pro.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.categories__text {
+  padding: 10px 20px 0 20px;
+}
+
+.categories-button {
+  position: relative;
+  display: block;
+  padding: 20px 0 20px 0;
+  margin: 22px 20px 0 20px;
+  font-family: @font-family-base;
   font-size: 16px;
   line-height: 16px;
   color: @color-black;
+  text-transform: uppercase;
+  text-decoration: none;
   background-color: @color-light-grey;
+  border-top: 1px solid #d9d9d9;
+}
+
+.categories-button::after {
+  content: "";
+  position: absolute;
+  top: 23px;
+  left: 96px;
+  width: 24px;
+  height: 11px;
+  background-image: url("../img/icon-right-arrow-long.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media (min-width: @tablet-width) {
+  .categories {
+    width: 708px;
+    padding: 0 30px 0 30px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .categories {
+    width: 1220px;
+    padding: 0 40px 0 40px;
+  }
+
+  .categories__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .categories__item {
+    width: 590px;
+  }
 }
