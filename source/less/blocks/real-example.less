@@ -3,32 +3,10 @@
   background-color: @color-light-grey;
 }
 
-@media (min-width: @desktop-width) {
-  .real-example {
-    display: flex;
-    background-color: @color-white;
-    background-image: linear-gradient(#ffffff 300px, #f2f2f2 300px);
-  }
-}
-
 .real-example__history {
   width: 280px;
   padding: 0 20px 0 20px;
   margin: 0 auto;
-}
-
-@media (min-width: @tablet-width) {
-  .real-example__history {
-    width: 708px;
-    padding: 0 30px 0 30px;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .real-example__history {
-    width: 1220px;
-    padding: 0 110px 0 110px;
-  }
 }
 
 .real-example__heading {
@@ -38,23 +16,8 @@
 }
 
 .real-example__text {
-  .content-font();
   display: block;
   padding: 10px 5px 0 0;
-  font-family: @font-family-content;
-}
-
-@media (min-width: @tablet-width) {
-  .real-example__wrapper-stats {
-    display: flex;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .real-example__wrapper-stats {
-    display: flex;
-    flex-direction: column;
-  }
 }
 
 .real-example__stats {
@@ -68,9 +31,9 @@
   display: block;
   width: 125px;
   padding: 15px 0 15px 0;
+  font-family: @font-family-base;
   font-size: 24px;
   line-height: 24px;
-  font-weight: 200;
   text-transform: uppercase;
   text-align: center;
   border: 1px solid #cfcfcf;
@@ -82,11 +45,8 @@
   width: 100px;
   padding: 0;
   margin: -10px 0 0 15px;
-  font-family: @font-family-content;
   font-size: 12px;
   line-height: 12px;
-  font-weight: 200;
-  color: @color-grey;
   text-transform: lowercase;
   text-align: center;
   background-color: @color-light-grey;
@@ -95,9 +55,7 @@
 .real-example__totals {
   display: block;
   margin-left: 8px;
-  font-size: 14px;
   line-height: 20px;
-  font-weight: 200;
   text-transform: uppercase;
   text-align: center;
 }
@@ -105,7 +63,6 @@
 .real-example__galery {
   width: 320px;
   margin: 0 auto;
-  outline: 3px solid red;
 }
 
 .real-example__list {
@@ -148,9 +105,38 @@
 
 .real-example__scale-before,
 .real-example__scale-after {
+  font-family: @font-family-base;
   font-size: 16px;
   line-height: 20px;
-  font-weight: 200;
   text-transform: uppercase;
   cursor: pointer;
+}
+
+@media (min-width: @tablet-width) {
+  .real-example__history {
+    width: 708px;
+    padding: 0 30px 0 30px;
+  }
+
+  .real-example__wrapper-stats {
+    display: flex;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .real-example {
+    display: flex;
+    background-color: @color-white;
+    background-image: linear-gradient(#ffffff 300px, #f2f2f2 300px);
+  }
+
+  .real-example__history {
+    width: 1220px;
+    padding: 0 40px 0 40px;
+  }
+
+  .real-example__wrapper-stats {
+    display: flex;
+    flex-direction: column;
+  }
 }

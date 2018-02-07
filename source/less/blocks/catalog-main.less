@@ -3,9 +3,18 @@
   margin: 0 auto;
 }
 
+.catalog-main__heading-page {
+  .title();
+  margin-left: 20px;
+}
+
 @media (min-width: @tablet-width) {
   .catalog-main {
     width: @tablet-width;
+  }
+
+  .catalog-main__heading-page {
+    margin-left: 30px;
   }
 }
 
@@ -13,21 +22,8 @@
   .catalog-main {
     width: @desktop-width;
   }
-}
 
-.catalog-main__heading-page {
-  .title();
-  margin-left: 20px;
-}
-
-@media (min-width: @tablet-width) {
   .catalog-main__heading-page {
-    margin-left: 30px;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .catalog-main__heading-page {
-    margin-left: 110px;
+    margin-left: 40px;
   }
 }
