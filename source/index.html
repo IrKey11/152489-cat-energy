@@ -66,10 +66,14 @@
         <p class="real-example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
         <div class="real-example__wrapper-stats">
           <dl class="real-example__stats">
-            <dt class="real-example__value">5 кг</dt>
-            <dd class="real-example__field">Снижение веса</dd>
-            <dt class="real-example__value">60 дней</dt>
-            <dd class="real-example__field">Затрачено времени</dd>
+            <div class="real-example__wrapper-item">
+              <dt class="real-example__value">5 кг</dt>
+              <dd class="real-example__field">Снижение<br>веса</dd>
+            </div>
+            <div class="real-example__wrapper-item">
+              <dt class="real-example__value">60 дней</dt>
+              <dd class="real-example__field">Затрачено<br>времени</dd>
+            </div>
           </dl>
           <p class="real-example__totals">Затраты на питание: 15 000 руб.</p>
         </div>
@@ -79,9 +83,13 @@
           <img class="real-example__item" src="img/after-mobile@1x.png" width="320" height="240" alt="Худой кот">
           <img class="real-example__item" src="img/before-mobile@1x.png" width="320" height="240" alt="Толстый кот">
         </div>
-        <div class="real-example__toogls">
-          <span class="real-example__scale-before">Было</span>
-          <span class="real-example__scale-after">Стало</span>
+        <div class="real-example__controls">
+          <label class="real-example__scale-before"><input type="radio" name="radio-before" value="before">Было</label>
+          <label class="real-example__scale-after"><input type="radio" name="radio-after" value="after">Стало</label>
+          <div class="real-example__toogls">
+            <div class="real-example__toogle-beaore"></div>
+            <div class="real-example__toogle-after"></div>
+          </div>
         </div>
       </section>
     </section>
