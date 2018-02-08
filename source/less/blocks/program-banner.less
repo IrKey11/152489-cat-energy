@@ -40,44 +40,57 @@
   text-decoration: none;
 }
 
-@media (min-width: @tablet-width) {
+@media screen and (min-width: @tablet-width) {
   .program-banner {
     width: 708px;
-    padding: 0 30px 0 30px;
+    min-height: 832px; // временно для сетки
+    padding: 11px 30px 0 30px;
     background-image: none;
     text-align: left;
   }
 
   .program-banner__heading {
+    margin-left: 87px;
     font-size: 60px;
     line-height: 60px;
     color: @color-black;
   }
 
   .program-banner__slogan {
+    margin-left: 87px;
     font-size: 20px;
     line-height: 20px;
     color: @color-black;
   }
 
   .program-banner__product {
-    width: 709px;
-    height: 609px;
+    display: none; //отключила до след.задания
   }
 
   .program-banner__button {
+    z-index: 1;
     order: 0;
     align-self: flex-start;
     padding: 17px 29px 15px 26px;
-    margin: 0;
+    margin: 43px 0 0 90px;
     font-size: 20px;
     line-height: 20px;
   }
 }
 
-@media (min-width: @desktop-width) {
+@media screen and (min-width: @desktop-width) {
   .program-banner {
     width: 1220px;
-    padding: 0 40px 0 40px;
+    min-height: 602px; // временно для сетки
+    padding: 67px 40px 0 40px;
+  }
+
+  .program-banner__slogan,
+  .program-banner__heading {
+    margin-left: 79px;
+  }
+
+  .program-banner__button {
+    margin: 51px 0 0 78px;
   }
 }
