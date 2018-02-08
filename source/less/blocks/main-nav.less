@@ -10,8 +10,8 @@
 
 .main-nav__toggle {
   position: absolute;
-  top: -21px;
-  right: 10px;
+  top: -42px;
+  right: 20px;
   z-index: 2;
   display: block;
   width: 24px;
@@ -19,13 +19,14 @@
   background-color: @color-white;
   cursor: pointer;
   border: none;
+  outline: none;
 }
 
 .main-nav--closed .main-nav__toggle::before {
   content: "";
   position: absolute;
-  top: -21px;
-  right: 10px;
+  top: -2px;
+  right: 0;
   width: 24px;
   height: 2px;
   background-color: @color-black;
@@ -33,15 +34,15 @@
 }
 
 .main-nav--opened .main-nav__toggle {
-  top: 0;
-  right: 0;
+  top: -43px;
+  right: 20px;
 
   &::before,
   &::after {
     content: "";
     position: absolute;
-    top: 8px;
-    left: 3px;
+    top: 6px;
+    left: 0;
     width: 22px;
     height: 2px;
     background-color: @color-black;
