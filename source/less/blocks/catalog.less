@@ -11,7 +11,7 @@
   border-top: 1px solid #ededed;
 }
 
-@media (min-width: @tablet-width) {
+@media screen and (min-width: @tablet-width) {
   .catalog {
     width: 708px;
     padding: 0 30px 0 30px;
@@ -25,11 +25,12 @@
 
   .catalog__item {
     width: 324px;
-    min-height: 575px;
+    border-top: none;
+    outline: 2px solid red;
   }
 }
 
-@media (min-width: @desktop-width) {
+@media screen and (min-width: @desktop-width) {
   .catalog {
     width: 1220px;
     padding: 0 40px 0 40px;
@@ -37,7 +38,6 @@
 
   .catalog__item {
     width: 245px;
-    min-height: 500px;
   }
 
   .catalog-main__wrapper-additional-products {

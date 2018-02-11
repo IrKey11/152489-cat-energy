@@ -70,13 +70,52 @@
   text-align: center;
 }
 
-@media (min-width: @tablet-width) {
+@media screen and (min-width: @tablet-width) {
+  .card-product__item {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .card-product__heading {
+    width: 150px;
+    margin: 0 auto;
+    padding: 0;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .card-product__packaging-pro,
+  .card-product__packaging-slim {
+    width: 60px;
+    margin: 0 auto 20px auto;
+    text-align: center;
+  }
+
+  .card-product__product-characteristics {
+    width: 250px;
+    margin: 0 auto 30px auto;
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  .card-product__product-characteristics tr {
+    border-bottom: 1px solid #cdcdcd;
+  }
+
+  .card-product__field {
+    padding: 8px 0 8px 0;
+  }
+
+
   .card-product__button {
     width: 250px;
+    margin: 0 auto;
   }
 }
 
-@media (min-width: @desktop-width) {
+@media screen and (min-width: @desktop-width) {
   .card-product__button {
     width: 170px;
   }
