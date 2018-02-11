@@ -1,8 +1,27 @@
 .more-products {
+  position: relative;
   text-align: center;
+  border-bottom: 1px solid #ededed;
+}
+
+.more-products::after,
+.more-products::before {
+  content: "";
+  position: absolute;
+  top: 40px;
+  left: 145px;
+  width: 30px;
+  height: 2px;
+  background-color: #d3d3d3;
+}
+
+.more-products::before {
+  transform: rotate(90deg);
 }
 
 .more-product__all-goods {
+  display: block;
+  margin-top: 79px;
   font-family: @font-family-base;
   font-size: 16px;
   line-height: 20px;
@@ -12,6 +31,8 @@
 }
 
 .more-product__slogan {
+  margin: 9px 0 20px 0;
+  padding: 0;
   font-size: 12px;
   line-height: 16px;
 }
@@ -20,6 +41,7 @@
   display: block;
   width: 100%;
   padding: 10px 0 10px 0;
+  margin-bottom: 25px;
   font-size: 16px;
   line-height: 20px;
   color: #222222;

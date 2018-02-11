@@ -1,11 +1,14 @@
 .catalog {
-  width: 280px;
-  padding: 0 20px 0 20px;
+  width: 320px;
   margin: 0 auto;
 }
 
 .catalog__list {
   .reset-list();
+}
+
+.catalog__item {
+  border-top: 1px solid #ededed;
 }
 
 @media (min-width: @tablet-width) {
@@ -23,7 +26,6 @@
   .catalog__item {
     width: 324px;
     min-height: 575px;
-    outline: 1px solid blue;
   }
 }
 
@@ -36,7 +38,6 @@
   .catalog__item {
     width: 245px;
     min-height: 500px;
-    outline: 1px solid blue;
   }
 
   .catalog-main__wrapper-additional-products {
