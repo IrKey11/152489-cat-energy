@@ -2,6 +2,7 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Кэт энерджи. Подбор программы.</title>
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
@@ -9,11 +10,11 @@
 <body>
 
   <header class="page-header">
-    <a class="page-header__logo">
+    <a class="page-header__logo" href="index.html">
       <img class="page-header__logo-image-icon" src="img/icon-logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy">
       <img class="page-header__logo-image-name" src="img/logo-mobile-header.svg" width="101" height="18" alt="Логотип Cat Energy">
     </a>
-    <nav class="main-nav main-nav--closed">
+    <nav class="main-nav">
       <button class="main-nav__toggle" type="button"><span class="visually-hidden .main-nav--closed">Открыть меню</span></button>
       <ul class="main-nav__list site-list">
         <li class="site-list__item">
@@ -140,13 +141,13 @@
       </form>
     </section>
     <section class="contacts">
-      <section class="contacts__cooperation cooperation">
-        <b class="cooperation__heading">Приглашаем к сотрудничеству дилеров!</b>
-        <p class="cooperation__adds">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
-      </section>
-      <section class="contacts__map map">
+      <div class="contacts__cooperation">
+        <b>Приглашаем <br> к сотрудничеству дилеров!</b>
+        <p>ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+      </div>
+      <div class="contacts__map map">
         <img class="map__image" src="img/map.png" width="320" height="400" alt="Карта">
-      </section>
+      </div>
     </section>
   </main>
 
@@ -172,22 +173,7 @@
     </section>
   </footer>
 
-  <script>
-    var navMain = document.querySelector('.main-nav');
-    var navToggle = document.querySelector('.main-nav__toggle');
-
-    navMain.classList.remove('main-nav--nojs');
-
-    navToggle.addEventListener('click', function() {
-      if (navMain.classList.contains('main-nav--closed')) {
-        navMain.classList.remove('main-nav--closed');
-        navMain.classList.add('main-nav--opened');
-      } else {
-        navMain.classList.add('main-nav--closed');
-        navMain.classList.remove('main-nav--opened');
-      }
-    });
-  </script>
+  <script src="script/script-menu-mobile.js"></script>
 
 </body>
 </html>
