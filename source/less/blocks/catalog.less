@@ -24,9 +24,16 @@
   }
 
   .catalog__item {
-    width: 324px;
+    margin-bottom: 138px;
+  }
+
+  .catalog__item:not(:last-of-type) {
     border-top: none;
-    outline: 2px solid red;
+  }
+
+  .catalog__item:last-of-type {
+    width: 324px;
+    border: 1px solid #e6e6e6;
   }
 }
 
@@ -34,10 +41,6 @@
   .catalog {
     width: 1220px;
     padding: 0 40px 0 40px;
-  }
-
-  .catalog__item {
-    width: 245px;
   }
 
   .catalog-main__wrapper-additional-products {

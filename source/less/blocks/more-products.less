@@ -47,3 +47,38 @@
   color: #222222;
   text-decoration: none;
 }
+
+@media screen and (min-width: @tablet-width) {
+  .more-product {
+    padding: 0 37px;
+    border: 1px solid #e6e6e6;
+  }
+
+  .more-products::after,
+  .more-products::before {
+    top: 85px;
+    left: 133px;
+    width: 60px;
+  }
+
+  .more-product__all-goods {
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 165px;
+    font-size: 20px;
+  }
+
+  .more-product__slogan {
+    width: 169px;
+    margin: 22px auto 85px auto;
+    padding: 0;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .more-product__button {
+    width: 250px;
+    margin: 0 auto 40px auto;
+  }
+}
