@@ -114,15 +114,17 @@
 }
 
 .picking-program__input-checkbox:checked + .picking-program__label-checkbox::before {
+  color: @color-green;
   background-image: url("../img/icon-tick.svg");
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .picking-program__input-radio:checked + .picking-program__label-radio::before {
-  background-image: url("../img/icon-tick.svg");
-  background-position: center;
-  background-repeat: no-repeat;
+  width: 10px;
+  height: 10px;
+  background-color: @color-green;
+  box-shadow: 0 0 0 10px red;
 }
 
 .picking-program__textarea {
