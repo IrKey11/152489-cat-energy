@@ -32,10 +32,10 @@
   background-position: center;
 }
 
-@media (min-width: @tablet-width) {
+@media screen and (min-width: @tablet-width) {
   .promo {
     width: 708px;
-    height: 200px;
+    min-height: 200px;
     margin-top: 65px;
   }
 
@@ -46,13 +46,16 @@
   }
 }
 
-@media (min-width: @desktop-width) {
+@media screen and (min-width: @desktop-width) {
   .promo {
-    margin: 80px 0 0 0;
-    padding: 190px 27px 30px 27px;
+    width: 245px;
+    min-height: 290px;
+    margin: 55px 0 0 0;
   }
 
-  .promo-slogan {
+  .promo__slogan {
+    margin: 0 auto;
+    padding-top: 185px;
     text-align: center;
   }
 }

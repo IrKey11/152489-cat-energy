@@ -33,7 +33,7 @@
   margin: 0 auto;
 }
 
-@media (min-width: @tablet-width) {
+@media screen and (min-width: @tablet-width) {
   .contacts {
     margin-top: 75px;
   }
@@ -53,5 +53,26 @@
   .contacts__cooperation p {
     width: 160px;
     text-align: right;
+  }
+}
+
+@media screen and (min-width: @desktop-width) {
+  .contacts__cooperation {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    justify-content: flex-start;
+    width: 570px;
+    padding: 0;
+    background-color: @color-white;
+  }
+
+  .contacts__cooperation b {
+    margin: 65px 93px 65px 75px;
+  }
+
+  .contacts__cooperation p {
+    margin: 65px 0 65px 0;
+    text-align: left;
   }
 }
