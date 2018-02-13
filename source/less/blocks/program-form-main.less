@@ -8,13 +8,17 @@
   margin-left: 20px;
 }
 
-@media (min-width: @tablet-width) {
+@media screen and (min-width: @tablet-width) {
   .program-form-main {
     width: @tablet-width;
   }
+
+  .program-form-main__heading-page {
+    font-size: 60px;
+  }
 }
 
-@media (min-width: @desktop-width) {
+@media screen and (min-width: @desktop-width) {
   .program-form-main {
     width: @desktop-width;
   }
