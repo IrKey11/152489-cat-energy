@@ -1,6 +1,31 @@
 .label {
+  position: relative;
   font-family: @font-family-base;
   font-size: 16px;
   color: #222222;
   text-transform: uppercase;
+}
+
+.label--icon-mail::after {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 248px;
+  width: 17px;
+  height: 13px;
+  background-image: url("../img/icon-mail.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.label--icon-phone::after {
+  content: "";
+  position: absolute;
+  top: 13px;
+  left: 248px;
+  width: 20px;
+  height: 20px;
+  background-image: url("../img/icon-phone.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }

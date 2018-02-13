@@ -13,8 +13,27 @@
   text-transform: uppercase;
 }
 
-.picking-program__fieldset ul {
-  .reset-list();
+.picking-program__list,
+.picking-program__list-categories,
+.picking-program__list-contacts,
+.picking-program__list-additionally {
+  .reset();
+}
+
+.picking-program__list-categories {
+  margin-top: -18px;
+  margin-bottom: 7px;
+  border-top: 1px solid #ededed;
+  border-bottom: 1px solid #ededed;
+}
+
+.picking-program__list-categories .picking-program__item {
+  margin-top: 23px;
+  margin-bottom: 23px;
+}
+
+.picking-program__list-additionally .picking-program__item {
+  margin-bottom: 23px;
 }
 
 .picking-program__item {
@@ -22,17 +41,46 @@
 }
 
 .picking-program__fieldset {
-  padding: 35px 0 23px 0;
   margin: 0;
+  padding: 0;
+  padding-top: 25px;
   border: none;
 }
 
-.picking-program__legend {
+.picking-program__legend-contacts,
+.picking-program__legend-comment,
+.picking-program__legend-additionally {
+  position: relative;
   font-family: @font-family-base;
   font-size: 24px;
   line-height: 24px;
   font-weight: 400;
   color: @color-black;
+}
+
+.picking-program__legend-contacts {
+  width: 200px;
+  padding-top: 25px;
+  padding-bottom: 10px;
+  background-color: @color-white;
+}
+
+.picking-program__legend-comment {
+  width: 140px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: @color-white;
+}
+
+.picking-program__legend-additionally {
+  width: 164px;
+  padding-top: 10px;
+  padding-bottom: 15px;
+  background-color: @color-white;
+}
+
+.picking-program__fieldset--line-green {
+  background-image: linear-gradient(transparent 0, #68b738 0, #68b738 3px, transparent 3px);
 }
 
 .picking-program__label {
@@ -42,7 +90,7 @@
 
 .picking-program__label span {
   flex-shrink: 0;
-  margin-right: 10px;
+  margin-right: 15px;
 }
 
 .picking-program__label-toogle {
@@ -52,13 +100,16 @@
 .picking-program__textarea {
   box-sizing: border-box;
   width: 100%;
-  padding: 15px 5px 15px 15px;
+  padding: 15px 5px 22px 15px;
   border: 1px solid #e6e6e6;
 }
 
 .picking-program__button {
-  padding: 10px 0 10px 0;
   width: 100%;
+  margin-top: 13px;
+  padding: 10px 0 10px 0;
+  font-size: 16px;
+  line-height: 20px;
   border: none;
 }
 
@@ -75,6 +126,7 @@
 .picking-program__footnote {
   display: block;
   margin-top: 20px;
+  margin-bottom: 35px;
   font-family: @font-family-content;
   font-size: 14px;
   line-height: 16px;
@@ -83,7 +135,7 @@
   text-align: center;
 }
 
-@media (min-width: @tablet-width) {
+@media screen and (min-width: @tablet-width) {
   .picking-program {
     width: 708px;
     padding: 0 30px 0 30px;
@@ -107,7 +159,7 @@
   }
 }
 
-@media (min-width: @desktop-width) {
+@media screen and (min-width: @desktop-width) {
   .picking-program {
     width: 1220px;
     padding: 0 40px 0 40px;
