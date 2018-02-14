@@ -1,8 +1,7 @@
 .program-banner {
+  .container();
   display: flex;
   flex-direction: column;
-  width: 320px;
-  margin: 0 auto;
   background-image: url("../img/index-background-mobile@1x.jpg"), linear-gradient(#63a73a 305px, #ffffff 180px);
   background-repeat: no-repeat;
   background-position: top;
@@ -42,7 +41,6 @@
 
 @media screen and (min-width: @tablet-width) {
   .program-banner {
-    width: 708px;
     min-height: 832px; // временно для сетки
     padding: 11px 30px 0 30px;
     background-image: none;
@@ -50,7 +48,8 @@
   }
 
   .program-banner__heading {
-    margin-left: 87px;
+    padding: 0;
+    margin: 0 0 0 87px;
     font-size: 60px;
     line-height: 60px;
     color: @color-black;
@@ -80,7 +79,6 @@
 
 @media screen and (min-width: @desktop-width) {
   .program-banner {
-    width: 1220px;
     min-height: 602px; // временно для сетки
     padding: 67px 40px 0 40px;
   }

@@ -1,9 +1,6 @@
 .page-footer {
-  display: flex;
-  flex-direction: column;
-  width: 280px;
-  padding: 0 20px 0 20px;
-  margin: 0 auto;
+  .container();
+  padding: 0 20px;
   background-color: @color-light-grey;
 }
 
@@ -14,9 +11,8 @@
 
 @media screen and (min-width: @tablet-width) {
   .page-footer {
-    flex-direction: row;
+    display: flex;
     align-items: flex-end;
-    width: 708px;
     padding: 64px 30px 62px 30px;
   }
 
@@ -29,7 +25,6 @@
 
 @media screen and (min-width: @desktop-width) {
   .page-footer {
-    width: 1220px;
-    padding: 60px 40px 60px 40px;
+    padding: 60px 40px;
   }
 }
