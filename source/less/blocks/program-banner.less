@@ -1,7 +1,8 @@
 .program-banner {
-  .container();
   display: flex;
   flex-direction: column;
+  width: 320px;
+  margin: 0 auto;
   background-image: url("../img/index-background-mobile@1x.jpg"), linear-gradient(#63a73a 305px, #ffffff 180px);
   background-repeat: no-repeat;
   background-position: top;
@@ -12,21 +13,19 @@
   font-family: @font-family-base;
   font-size: 36px;
   line-height: 36px;
-  font-weight: 400;
   color: @color-white;
 }
 
 .program-banner__slogan {
-  margin-top: -8px;
+  margin-top: -5px;
   line-height: 14px;
   font-family: @font-family-base;
-  font-weight: 400;
   color: @color-white;
   text-transform: uppercase;
 }
 
 .program-banner__product {
-  margin: 27px 0 0 20px;
+  margin: 25px 0 0 20px;
 }
 
 .program-banner__button {
@@ -39,56 +38,45 @@
   text-decoration: none;
 }
 
-@media screen and (min-width: @tablet-width) {
+@media (min-width: @tablet-width) {
   .program-banner {
-    min-height: 832px; // временно для сетки
-    padding: 11px 30px 0 30px;
+    width: 708px;
+    padding: 0 30px 0 30px;
     background-image: none;
     text-align: left;
   }
 
   .program-banner__heading {
-    padding: 0;
-    margin: 0 0 0 87px;
+    margin-left: 90px;
     font-size: 60px;
     line-height: 60px;
     color: @color-black;
   }
 
   .program-banner__slogan {
-    margin-left: 87px;
     font-size: 20px;
     line-height: 20px;
     color: @color-black;
   }
 
   .program-banner__product {
-    display: none; //отключила до след.задания
+    width: 709px;
+    height: 609px;
   }
 
   .program-banner__button {
-    z-index: 1;
     order: 0;
     align-self: flex-start;
     padding: 17px 29px 15px 26px;
-    margin: 43px 0 0 90px;
+    margin: 0;
     font-size: 20px;
     line-height: 20px;
   }
 }
 
-@media screen and (min-width: @desktop-width) {
+@media (min-width: @desktop-width) {
   .program-banner {
-    min-height: 602px; // временно для сетки
-    padding: 67px 40px 0 40px;
-  }
-
-  .program-banner__slogan,
-  .program-banner__heading {
-    margin-left: 79px;
-  }
-
-  .program-banner__button {
-    margin: 51px 0 0 78px;
+    width: 1220px;
+    padding: 0 40px 0 40px;
   }
 }
