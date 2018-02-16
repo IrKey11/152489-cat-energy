@@ -2,11 +2,13 @@
   .container();
 }
 
+.page-header__wrap-logo {
+  padding: 11px 0 13px 20px;
+  border-bottom: 1px solid #e6e6e6;
+}
+
 .page-header__logo {
-  display: flex;
-  justify-content: space-between;
-  width: 190px;
-  margin: 11px 0 16px 20px;
+  display: inline-block;
 }
 
 .page-header__logo-image-icon {
@@ -17,7 +19,8 @@
 .page-header__logo-image-name {
   width: 101px;
   height: 18px;
-  padding-top: 12px;
+  padding-bottom: 7px;
+  margin-left: 53px;
 }
 
 @media screen and (min-width: @tablet-width) {
@@ -25,23 +28,46 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 24px 30px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 
-  .page-header__logo {
-    width: 177px;
-    padding: 0;
+  .page-header__wrap-logo {
+    padding: 24px 0 0 0;
+    border-bottom: none;
+  }
+
+  .page-header__logo-image-icon {
+    width: 71px;
+    height: 58px;
+  }
+
+  .page-header__logo-image-name {
+    width: 85px;
+    height: 17px;
+    padding-bottom: 18px;
+    margin-left: 14px;
   }
 }
 
 @media screen and (min-width: @desktop-width) {
   .page-header {
-    padding: 0 40px;
+    padding-left: 40px;
+    padding-right: 40px;
   }
 
-  .page-header__logo {
-    width: 208px;
-    margin: 0;
-    padding: 0;
+  .page-header__wrap-logo {
+    padding: 54px 0 0 0;
+  }
+
+  .page-header__logo-image-icon {
+    height: 59px;
+  }
+
+  .page-header__logo-image-name {
+    width: 119px;
+    height: 23px;
+    padding-bottom: 14px;
+    margin-left: 10px;
   }
 }

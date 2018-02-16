@@ -4,8 +4,10 @@
 
 .main-nav__list {
   .reset-list();
-  .container();
-  border-top: 1px solid #e6e6e6;
+  margin-right: auto;
+  margin-left: auto;
+  width: 320px;
+  box-sizing: border-box;
 }
 
 .main-nav__toggle {
@@ -66,17 +68,9 @@
   .main-nav--closed .site-list {
     display: none;
   }
-
-  &--active {
-    display: block;
-  }
 }
 
 @media screen and (min-width: @tablet-width) {
-  .main-nav {
-    padding: 43px 0 0 0;
-  }
-
   .main-nav__list {
     width: 440px;
     border: none;
@@ -88,11 +82,7 @@
 }
 
 @media screen and (min-width: @desktop-width) {
-  .main-nav {
-    padding: 74px 0 0 0;
-  }
-
   .main-nav__list {
-    width: 480px;
+    width: 479px;
   }
 }

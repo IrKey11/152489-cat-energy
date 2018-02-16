@@ -1,6 +1,5 @@
 .site-list__link {
   display: block;
-  padding: 22px 50px 22px 50px;
   font-family: @font-family-base;
   font-size: 20px;
   line-height: 20px;
@@ -32,8 +31,8 @@
   }
 
   .site-list__item {
-    margin: 0;
-    padding-bottom: 5px;
+    padding-top: 28px;
+    padding-bottom: 7px;
     text-align: left;
     border: none;
   }
@@ -44,6 +43,13 @@
 }
 
 @media screen and (min-width: @desktop-width) {
+  .site-list__item {
+    padding-top: 60px;
+    padding-bottom: 7px;
+    text-align: left;
+    border: none;
+  }
+
   .site-list__link {
     font-size: 20px;
   }
