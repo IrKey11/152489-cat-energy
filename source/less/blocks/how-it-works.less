@@ -1,8 +1,7 @@
 .how-it-works {
   .container();
   padding: 0 20px;
-  margin-bottom: 20px;
-  border-bottom: 1px solid #e6e6e6;
+  margin-bottom: 40px;
 }
 
 .how-it-works__heading {
@@ -62,17 +61,19 @@
 @media screen and (min-width: @tablet-width) {
   .how-it-works {
     padding: 0 30px 103px 30px;
+    border-bottom: 1px solid #e6e6e6;
   }
 
   .how-it-works__heading {
     font-size: 60px;
-    padding: 45px 0 65px 0;
+    padding: 45px 0 67px 0;
   }
 
   .how-it-works__list {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    counter-reset: number;
   }
 
   .how-it-works__item {
@@ -117,6 +118,20 @@
     width: 80px;
     height: 80px;
   }
+
+  .how-it-works__item::after {
+    z-index: -1;
+    counter-increment: number;
+    content: counter(number) "";
+    position: absolute;
+    top: -30px;
+    right: 75px;
+    font-family: @font-family-base;
+    font-size: 281px;
+    line-height: 281px;
+    font-weight: 400;
+    color: #f2f2f2;
+  }
 }
 
 @media screen and (min-width: @desktop-width) {
@@ -126,11 +141,17 @@
   }
 
   .how-it-works__heading {
-    padding: 30px 0 67px 0;
+    padding: 30px 0 69px 0;
   }
 
   .how-it-works__item {
     width: 245px;
+    padding-bottom: 50px;
     margin-bottom: 0;
+  }
+
+  .how-it-works__item::after {
+    top: -30px;
+    right: 0;
   }
 }
