@@ -9,6 +9,8 @@
 }
 
 .program-banner__heading {
+  padding: 27px 0 26px 0;
+  margin: 0;
   font-family: @font-family-base;
   font-size: 36px;
   line-height: 36px;
@@ -16,50 +18,103 @@
   color: @color-white;
 }
 
+.program-banner__product {
+  margin: 27px auto 3px auto;
+}
+
+.program-banner__tablet,
+.program-banner__desktop {
+  display: none;
+}
+
 .program-banner__slogan {
   line-height: 14px;
   font-family: @font-family-base;
+  font-weight: 400;
   color: @color-white;
   text-transform: uppercase;
 }
 
 .program-banner__button {
   order: 2;
-  padding: 11px 72px;
+  padding-top: 10px;
+  padding-bottom: 11px;
+  margin-left: 20px;
+  margin-right: 20px;
   font-size: 14px;
   line-height: 18px;
   font-weight: 200;
   text-decoration: none;
 }
 
-@media (min-width: @tablet-width) {
+@media screen and (min-width: @tablet-width) {
   .program-banner {
     background-image: none;
     text-align: left;
   }
 
   .program-banner__heading {
+    padding: 54px 0 42px 118px;
     font-size: 60px;
     line-height: 60px;
     color: @color-black;
   }
 
   .program-banner__slogan {
+    padding: 0 0 42px 118px;
     font-size: 20px;
     line-height: 20px;
     color: @color-black;
   }
 
   .program-banner__product {
-    width: 709px;
-    height: 609px;
+    display: none;
+  }
+
+  .program-banner__tablet {
+    display: block;
+    margin: -74px auto 0 auto;
   }
 
   .program-banner__button {
+    z-index: 1;
     order: 0;
     align-self: flex-start;
     padding: 17px 29px 15px 26px;
+    margin-left: 119px;
     font-size: 20px;
     line-height: 20px;
+  }
+}
+
+@media screen and (min-width: @desktop-width) {
+  .program-banner {
+    position: relative;
+    padding-top: 50px;
+  }
+
+  .program-banner__heading {
+    z-index: 1;
+    padding: 55px 0 41px 120px;
+  }
+
+  .program-banner__slogan {
+    padding: 0 0 52px 120px;
+  }
+
+  .program-banner__tablet {
+    display: none;
+  }
+
+  .program-banner__desktop {
+    position: absolute;
+    top: 25px;
+    right: 260px;
+    display: block;
+  }
+
+  .program-banner__button {
+    z-index: 0;
+    margin-left: 120px;
   }
 }
