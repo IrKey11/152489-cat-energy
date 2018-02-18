@@ -7,13 +7,14 @@
   display: flex;
   justify-content: space-between;
   width: 280px;
-  padding: 5px 20px 0 20px;
+  padding: 28px 20px 15px 20px;
   margin: 0 auto;
 }
 
 .contacts__cooperation b {
   width: 140px;
-  padding-top: 21px;
+  padding: 0;
+  margin: 0;
   font-family: @font-family-base;
   font-size: 16px;
   line-height: 20px;
@@ -22,10 +23,10 @@
   text-transform: uppercase;
 }
 
-.contacts__cooperation p {
+.contacts__add {
   width: 140px;
-  padding-top: 7px;
-  padding-bottom: 10px;
+  padding: 0 0 10px 0;
+  margin: 0;
   line-height: 20px;
 }
 
@@ -46,8 +47,8 @@
   }
 
   .contacts__cooperation {
-    width: 632px;
-    padding: 45px 68px;
+    width: 630px;
+    padding: 65px 69px;
     margin: 0 auto;
   }
 
@@ -57,17 +58,25 @@
     line-height: 25px;
   }
 
-  .contacts__cooperation p {
+  .contacts__add {
     width: 160px;
+    padding: 0;
+    font-size: 16px;
+    line-height: 20px;
     text-align: right;
+  }
+
+  .contacts__add span {
+    display: inline-block;
+    padding-top: 20px;
   }
 }
 
 @media screen and (min-width: @desktop-width) {
   .contacts__cooperation {
     position: absolute;
-    top: 40px;
-    left: 40px;
+    top: 98px;
+    left: 65px;
     justify-content: flex-start;
     width: 570px;
     padding: 0;
@@ -75,11 +84,11 @@
   }
 
   .contacts__cooperation b {
-    margin: 65px 93px 65px 75px;
+    padding: 65px 80px 65px 75px;
   }
 
-  .contacts__cooperation p {
-    margin: 65px 0 65px 0;
+  .contacts__add {
+    margin: 63px 0 65px 0;
     text-align: left;
   }
 
