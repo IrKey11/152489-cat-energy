@@ -1,10 +1,29 @@
 .input {
+  display: flex;
+  align-items: baseline;
+}
+
+.input span {
+  flex-shrink: 0;
+  margin-right: 20px;
+}
+
+.input__control {
   position: relative;
   box-sizing: border-box;
   width: 100%;
   flex-shrink: 1;
   padding: 15px 15px 10px 14px;
   border: 1px solid #e6e6e6;
+}
+
+.input__control::placeholder {
+  font-family: @font-family-base;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  color: @color-grey;
+  text-transform: uppercase;
 }
 
 .input--icon-mail {
@@ -16,13 +35,13 @@
 }
 
 @media screen and (min-width: @tablet-width) {
-  .input {
-    position: relative;
-    box-sizing: border-box;
-    width: 100%;
-    flex-shrink: 1;
+  .input__control {
     padding: 13px 15px 14px 16px;
-    border: 1px solid #e6e6e6;
+  }
+
+  .input__control::placeholder {
+    font-size: 20px;
+    line-height: 20px;
   }
 
   .input--icon-mail {

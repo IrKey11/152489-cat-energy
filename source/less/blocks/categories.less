@@ -115,6 +115,21 @@
   background-position: center;
 }
 
+.categories__button:hover {
+  &::after {
+    width: 33px;
+    height: 11px;
+  }
+}
+
+.categories__button:disabled {
+  color: rgba(17, 17, 17, 0.3);
+
+  &::after {
+    opacity: 0.3;
+  }
+}
+
 @media screen and (min-width: @tablet-width) {
   .categories {
     padding: 0 30px;

@@ -1,0 +1,27 @@
+.textarea {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 15px 5px 22px 15px;
+  border: 1px solid #e6e6e6;
+}
+
+.textarea::placeholder {
+  font-family: @font-family-base;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  color: @color-grey;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: @tablet-width) {
+  .textarea {
+    width: 100%;
+    padding: 15px 5px 45px 18px;
+  }
+
+  .textarea::placeholder {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
