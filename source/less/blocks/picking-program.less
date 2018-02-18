@@ -133,7 +133,7 @@
 
 .picking-program__label span {
   flex-shrink: 0;
-  margin-right: 15px;
+  margin-right: 20px;
 }
 
 .picking-program__textarea {
@@ -186,7 +186,7 @@
 
   .picking-program__text {
     width: 328px;
-    padding-top: 15px;
+    padding-top: 32px;
     padding-left: 40px;
     font-size: 20px;
     line-height: 30px;
@@ -195,6 +195,7 @@
   .picking-program__list {
     padding-left: 40px;
     padding-right: 40px;
+    padding-bottom: 28px;
   }
 
   .picking-program__list-name {
@@ -205,26 +206,27 @@
   }
 
   .picking-program__list-categories {
-    margin-left: 40px;
-    margin-right: 40px;
+    padding: 20px 27px 8px 27px;
+    margin: 45px 40px 46px 40px;
     border: 1px solid #ededed;
   }
 
   .picking-program__list-contacts {
-    padding-top: 45px;
     padding-left: 40px;
     padding-right: 40px;
+    margin-bottom: 45px;
   }
 
   .picking-program__list-additionally {
     display: flex;
     flex-wrap: wrap;
+    margin-top: 20px;
     padding-left: 40px;
     padding-right: 40px;
   }
 
   .picking-program__item {
-    margin-bottom: 22px;
+    margin-bottom: 20px;
   }
 
   .picking-program__item-additionally {
@@ -234,6 +236,12 @@
 
   .picking-program__item-additionally:nth-child(2n) {
     margin-left: 50px;
+  }
+
+  .picking-program__textarea {
+    width: 100%;
+    padding: 15px 5px 45px 18px;
+    border: 1px solid #e6e6e6;
   }
 
   .picking-program__input-text::placeholder,
@@ -252,6 +260,7 @@
   .picking-program__legend-contacts {
     width: 594px;
     padding-left: 40px;
+    margin-bottom: 47px;
   }
 
   .picking-program__legend-contacts::before {
@@ -263,6 +272,7 @@
   .picking-program__legend-comment {
     width: 258px;
     padding-left: 40px;
+    margin-bottom: 45px;
   }
 
   .picking-program__legend-comment::before {
@@ -287,6 +297,7 @@
     align-items: baseline;
     padding-left: 40px;
     padding-right: 40px;
+    padding-bottom: 51px;
   }
 
   .picking-program__button {
@@ -303,8 +314,11 @@
 }
 
 @media screen and (min-width: @desktop-width) {
-  .picking-program {
-    padding: 0 40px;
+  .picking-program__text {
+    width: 328px;
+    padding-left: 10px;
+    font-size: 20px;
+    line-height: 30px;
   }
 
   .picking-program__fieldset-wrapper {
