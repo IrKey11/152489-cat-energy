@@ -41,3 +41,21 @@
   opacity: 0.3;
   border-color: #bababa;
 }
+
+@media screen and (min-width: @tablet-width) {
+  .checkbox {
+    padding: 10px 0 10px 60px;
+    line-height: 20px;
+  }
+
+  .checkbox__label::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 38px;
+    height: 38px;
+    border: 1px solid;
+    border-color: #cdcdcd;
+  }
+}
