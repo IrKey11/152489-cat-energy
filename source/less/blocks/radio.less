@@ -1,8 +1,9 @@
 .radio {
   position: relative;
   display: inline-block;
-  padding: 10px 0 10px 60px;
-  line-height: 20px;
+  padding: 6px 0 6px 45px;
+  margin-bottom: 5px;
+  line-height: 18px;
 }
 
 .radio__control {
@@ -18,13 +19,13 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 38px;
-  height: 38px;
+  width: 28px;
+  height: 28px;
   border: 1px solid;
   border-color: #cdcdcd;
   border-radius: 50%;
   background-color: @color-white;
-  box-shadow: inset 0 0 0 10px @color-white;
+  box-shadow: inset 0 0 0 7px @color-white;
 }
 
 .radio:hover .radio__label::before {
@@ -38,4 +39,17 @@
 .radio__control:disabled ~ .radio__label {
   opacity: 0.3;
   background-color: #bababa;
+}
+
+@media screen and (min-width: @tablet-width) {
+  .radio {
+    padding: 10px 0 10px 50px;
+    line-height: 20px;
+  }
+
+  .radio__label::before {
+    width: 38px;
+    height: 38px;
+    box-shadow: inset 0 0 0 10px @color-white;
+  }
 }

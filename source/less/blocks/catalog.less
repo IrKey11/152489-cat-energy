@@ -22,14 +22,16 @@
   }
 
   .catalog__item {
+    border-top: none;
     margin-bottom: 138px;
   }
 
-  .catalog__item:not(:last-of-type) {
-    border-top: none;
+  .catalog__item:nth-last-child(1),
+  .catalog__item:nth-last-child(2) {
+    margin-bottom: 0;
   }
 
-  .catalog__item:last-of-type {
+  .catalog__item:last-child {
     border: 1px solid #e6e6e6;
   }
 }
@@ -37,5 +39,12 @@
 @media screen and (min-width: @desktop-width) {
   .catalog {
     padding: 0 40px;
+  }
+
+  .catalog__item:nth-last-child(1),
+  .catalog__item:nth-last-child(2),
+  .catalog__item:nth-last-child(3),
+  .catalog__item:nth-last-child(4) {
+    margin-bottom: 0;
   }
 }

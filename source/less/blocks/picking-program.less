@@ -1,10 +1,11 @@
 .picking-program {
   .container();
-  padding: 0 20px;
 }
 
 .picking-program__text {
   width: 235px;
+  padding: 0 0 0 20px;
+  margin: 0;
   font-family: @font-family-base;
   font-size: 14px;
   line-height: 18px;
@@ -14,22 +15,23 @@
 }
 
 .picking-program__list,
+.picking-program__list-name,
 .picking-program__list-categories,
 .picking-program__list-contacts,
-.picking-program__list-additionally {
+.picking-program__list-additionally,
+.picking-program__list-comment {
   .reset-list();
+  padding: 0 20px;
 }
 
-.picking-program__list-categories {
-  margin-top: -18px;
-  margin-bottom: 7px;
-  border-top: 1px solid #ededed;
+.picking-program__list-name {
+  padding: 41px 20px 6px 20px;
   border-bottom: 1px solid #ededed;
 }
 
-.picking-program__list-categories .picking-program__item {
-  margin-top: 23px;
-  margin-bottom: 23px;
+.picking-program__list-categories {
+  padding: 15px 20px 10px 20px;
+  border-bottom: 1px solid #ededed;
 }
 
 .picking-program__list-additionally .picking-program__item {
@@ -40,10 +42,19 @@
   margin-bottom: 15px;
 }
 
+.picking-program__list-categories .picking-program__item {
+  margin: 5px 0;
+}
+
+.picking-program__item p,
+.picking-program__item-additionally p {
+  margin: 0;
+  padding: 0;
+}
+
 .picking-program__fieldset {
   margin: 0;
   padding: 0;
-  padding-top: 25px;
   border: none;
 }
 
@@ -51,6 +62,8 @@
 .picking-program__legend-comment,
 .picking-program__legend-additionally {
   position: relative;
+  display: block;
+  padding: 0 0 0 20px;
   font-family: @font-family-base;
   font-size: 24px;
   line-height: 24px;
@@ -59,28 +72,58 @@
 }
 
 .picking-program__legend-contacts {
-  width: 200px;
-  padding-top: 25px;
-  padding-bottom: 10px;
+  position: relative;
+  width: 220px;
+  padding-top: 28px;
+  padding-bottom: 30px;
   background-color: @color-white;
+}
+
+.picking-program__legend-contacts::before {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  bottom: 60px;
+  left: 0;
+  width: 320px;
+  height: 3px;
+  background-color: @color-green;
 }
 
 .picking-program__legend-comment {
-  width: 140px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  width: 160px;
+  padding-top: 20px;
+  padding-bottom: 30px;
   background-color: @color-white;
+}
+
+.picking-program__legend-comment::before {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  bottom: 37px;
+  left: 0;
+  width: 320px;
+  height: 3px;
+  background-color: @color-green;
 }
 
 .picking-program__legend-additionally {
-  width: 164px;
-  padding-top: 10px;
-  padding-bottom: 15px;
+  width: 184px;
+  padding-top: 14px;
+  padding-bottom: 33px;
   background-color: @color-white;
 }
 
-.picking-program__fieldset--line-green {
-  background-image: linear-gradient(transparent 0, #68b738 0, #68b738 3px, transparent 3px);
+.picking-program__legend-additionally::before {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  bottom: 40px;
+  left: 0;
+  width: 320px;
+  height: 3px;
+  background-color: @color-green;
 }
 
 .picking-program__label {
@@ -93,40 +136,6 @@
   margin-right: 15px;
 }
 
-.picking-program__label-checkbox,
-.picking-program__label-radio {
-  margin-left: 45px;
-}
-
-.picking-program__label-radio::before,
-.picking-program__label-checkbox::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: -45px;
-  width: 30px;
-  height: 30px;
-  border: 1px solid #cfcfcf;
-}
-
-.picking-program__label-radio::before {
-  border-radius: 50%;
-}
-
-.picking-program__input-checkbox:checked + .picking-program__label-checkbox::before {
-  color: @color-green;
-  background-image: url("../img/icon-tick.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.picking-program__input-radio:checked + .picking-program__label-radio::before {
-  width: 30px;
-  height: 30px;
-  background-color: @color-green;
-  box-shadow: inset 0 0 0 10px @color-white;
-}
-
 .picking-program__textarea {
   box-sizing: border-box;
   width: 100%;
@@ -136,11 +145,16 @@
 
 .picking-program__button {
   width: 100%;
-  margin-top: 13px;
+  margin-top: 23px;
   padding: 10px 0 10px 0;
   font-size: 16px;
   line-height: 20px;
   border: none;
+}
+
+.picking-program__wrapper-button {
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .picking-program__input-text::placeholder,
