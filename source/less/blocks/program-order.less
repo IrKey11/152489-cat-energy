@@ -1,7 +1,7 @@
 .program-order__fieldset {
   margin: 0;
-  padding: 0;
-  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
   border: none;
 }
 
@@ -9,7 +9,7 @@
   position: relative;
   display: block;
   padding: 0;
-  margin: 0;
+  margin: 0 0 0 20px;
   margin-bottom: 20px;
   font-family: @font-family-base;
   font-size: 24px;
@@ -19,7 +19,8 @@
 }
 
 .program-order__fieldset--info {
-  padding: 23px 20px;
+  padding-top: 40px;
+  padding-bottom: 9px;
 }
 
 .program-order__fieldset--info .program-order__field {
@@ -27,17 +28,19 @@
 }
 
 .program-order__fieldset--type {
-  padding: 20px 20px 0 20px;
+  padding-top: 20px;
+  padding-bottom: 10px;
   border-top: 1px solid #ededed;
   border-bottom: 1px solid #ededed;
 }
 
 .program-order__fieldset--type .program-order__field {
-  margin-bottom: 13px;
+  margin-bottom: 10px;
 }
 
-.program-order__fieldset--contacts {
-  padding: 30px 20px;
+.program-order__fieldset--contacts .program-order__legend {
+  margin-bottom: 34px;
+  margin-top: 28px;
 }
 
 .program-order__fieldset--contacts .program-order__field {
@@ -45,15 +48,25 @@
 }
 
 .program-order__fieldset--comment {
-  padding: 0 20px 30px 20px;
+  padding-top: 15px;
+  padding-bottom: 25px;
+}
+
+.program-order__fieldset--comment .program-order__legend {
+  margin-bottom: 34px;
 }
 
 .program-order__fieldset--additional {
-  padding: 0 20px 34px 20px;
+  padding-top: 0;
+  padding-bottom: 23px;
+}
+
+.program-order__fieldset--additional .program-order__legend {
+  margin-bottom: 34px;
 }
 
 .program-order__fieldset--additional .program-order__field {
-  margin-bottom: 13px;
+  margin-bottom: 10px;
 }
 
 .program-order__field {
@@ -62,14 +75,19 @@
 }
 
 @media screen and (min-width: @tablet-width) {
+  .program-order__fieldset {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
   .program-order__legend {
     font-size: 36px;
     line-height: 36px;
-    margin: 0 0 60px 40px;
   }
 
   .program-order__fieldset--info {
-    padding-bottom: 75px;
+    padding-top: 66px;
+    padding-bottom: 50px;
   }
 
   .program-order__fieldset--info .program-order__field {
@@ -77,14 +95,18 @@
   }
 
   .program-order__fieldset--type {
-    padding-top: 24px;
-    padding-bottom: 24px;
+    padding-top: 0;
+    padding-bottom: 0;
     border: 1px solid #ededed;
   }
 
+  .program-order__fieldset--type .program-order__field {
+    margin-bottom: 8px;
+  }
+
   .program-order__fieldset--contacts {
-    padding-top: 80px;
-    padding-bottom: 70px;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 
   .program-order__fieldset--contacts .program-order__field {
@@ -92,7 +114,8 @@
   }
 
   .program-order__fieldset--comment {
-    padding-bottom: 70px;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 
   .program-order__fieldset--additional {

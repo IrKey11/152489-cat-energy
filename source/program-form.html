@@ -15,7 +15,7 @@
         <img class="page-header__logo-image-name" src="img/logo-mobile-header.svg" width="101" height="18" alt="Логотип Cat Energy">
       </a>
     </div>
-    <nav class="main-nav">
+    <nav class="main-nav main-nav--closed">
       <button class="main-nav__toggle" type="button"><span class="visually-hidden .main-nav--closed">Открыть меню</span></button>
       <ul class="main-nav__list site-list">
         <li class="site-list__item">
@@ -77,9 +77,9 @@
             </p>
           </div>
         </div>
-        <div class="program-order__fieldset">
-          <h2 class="program-order__legend">Контактные данные (владельца кота)</h2>
-          <div class="program-order__fieldset--contacts">
+        <div class="program-order__fieldset--contacts">
+          <h2 class="program-order__legend">Контактные данные <br>(владельца кота)</h2>
+          <div class="program-order__fieldset">
             <p class="program-order__field">
               <label class="input"><span class="label">E-mail:<sup>*</sup></span>
                 <input class="input__control" type="text" name="name" placeholder="KUKLACHEV@GMAIL.COM">
@@ -92,15 +92,17 @@
             </p>
           </div>
         </div>
-        <div class="program-order__fieldset program-order__fieldset--comment">
+        <div class="program-order__fieldset--comment">
           <h2 class="program-order__legend">Комментарий</h2>
-          <p class="program-order__field">
-            <textarea class="textarea" name="comment" rows="7" placeholder="Расскажите обо всех повадках кота"></textarea>
-          </p>
+          <div class="program-order__fieldset">
+            <p class="program-order__field">
+              <textarea class="textarea" name="comment" rows="7" placeholder="Расскажите обо всех повадках кота"></textarea>
+            </p>
+          </div>
         </div>
-        <div class="program-order__fieldset">
+        <div class="program-order__fieldset--additional">
           <h2 class="program-order__legend">Дополнительно</h2>
-          <div class="program-order__fieldset--additional">
+          <div class="program-order__fieldset">
             <p class="program-order__field">
               <label class="checkbox">
                 <input class="visually-hidden checkbox__control" type="checkbox" name="sweetener">
@@ -146,8 +148,8 @@
     </div>
   </section>
 
-  <div class="page-footer__wrap">
-    <footer class="page-footer">
+  <footer class="page-footer">
+    <div class="page-footer__wrap">
       <div class="page-footer__logo-wrap">
         <img class="page-footer__logo" src="img/logo-footer.svg" width="128" height="24" alt="Логотип Cat Energy">
       </div>
@@ -168,8 +170,8 @@
       <section class="page-footer__copyright copyright">
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
       </section>
-    </footer>
-  </div>
+    </div>
+  </footer>
 
   <script src="js/script-menu-mobile.js"></script>
 
